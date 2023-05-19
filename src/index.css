@@ -71,15 +71,17 @@ header .shop-cart-button.active{
 
 header .shop-cart{
   position: absolute;
-  top: 30px;
+  top: 50px;
   right: 80px;
   width: 450px;
+  height: 300px;
   background: #fafafa;
   box-shadow: 11px 14px 24px 3px rgba(0,0,0,0.15);
   -webkit-box-shadow: 11px 14px 24px 3px rgba(0,0,0,0.15);
   -moz-box-shadow: 11px 14px 24px 3px rgba(0,0,0,0.15);
   z-index: 1000;
 
+  overflow: scroll;
   padding: 20px;
   padding-bottom: 0;
 }
@@ -96,10 +98,9 @@ header .shop-cart .item{
 }
 
 header .shop-cart .item img{
-  width: 180px;
+  width: 200px;
   height: 240px;
   float: left;
-  margin-right: 20px;
   margin-bottom: 10px;
 }
 
@@ -138,10 +139,10 @@ header .shop-cart .summa{
 }
 
 header .presentation{
-  margin: 50px 0;
+  margin: 100px 0;
   background: url('./img/image.jpg');
   width: 100%;
-  height: 500px;
+  height: 600px;
   background-size: cover;
   background-position: center center;
   background-blend-mode: multiply;
@@ -151,23 +152,23 @@ header .presentation{
 header .presentation::after{
   content: 'Лучшие одежды для вас';
   position: absolute;
-  top: 160px;
-  left: 280px;
-  width: 400px;
-  font-size: 68px;
+  top: 130px;
+  left: 250px;
+  width: 500px;
+  font-size: 78px;
   font-weight: 900;
   color: #fff;
-  text-shadow: 6px 0px  #c6c3c3;
-  letter-spacing: 14px;
+  text-shadow: 6px 0px  #aba9a9;
+  letter-spacing: 20px;
 }
 
 header .presentation::before{
   content: 'По низким ценам';
   position: absolute;
-  top: 410px;
-  left: 280px;
+  top: 470px;
+  left: 250px;
   width: 300px;
-  font-size: 20px;
+  font-size: 23px;
   font-weight: 600;
   color: #fff;
 }

@@ -15,21 +15,42 @@ export class Categories extends Component {
                     name: 'Костюм'
                 },
                 {
-                    key: 'shoes',
-                    name: 'Платье'
+                    key: 't-shirt',
+                    name: 'Футболка'
                 },
                 {
-                    key: 'palto',
+                    key: 'coat',
                     name: 'Пальто'
                 },
                 {
                     key: 'sports',
-                    name: 'Спортивный'
+                    name: 'Спортивная одежда'
                 },
                 {
-                    key: 'cloak',
-                    name: 'Плащ'
-                }
+                    key: 'hoodie',
+                    name: 'Худи'
+                },
+                {
+                    key: 'windbreaker',
+                    name: 'Ветровка'
+                },
+                {
+                    key: 'jacket',
+                    name: 'Куртка'
+                },
+                {
+                    key: 'bomber',
+                    name: 'Бомбер'
+                },
+                {
+                    key: 'sweatshirt',
+                    name: 'Свитшот'
+                },
+                {
+                    key: 'boots',
+                    name: 'Бутсы'
+                },
+
             ]
         }
     }

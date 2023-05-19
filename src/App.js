@@ -3,6 +3,8 @@ import React from "react";
 import Items from "./components/Items";
 import Categories from "./components/Categories";
 import ShowFullItem from "./components/ShowFullItem";
+import { Route, Routes } from "react-router-dom";
+
 
 class App extends React.Component {
   constructor(props) {
@@ -13,59 +15,75 @@ class App extends React.Component {
       items: [
         {
           id: 1,
-          title: '' ,
-          img: '' ,
-          desc: '' ,
-          category: '',
-          price: ''
+          title: 'Куртка' ,
+          img: 'wind.webp' ,
+          desc: 'Спортивная куртка' ,
+          category: 'jacket',
+          price: '1200'
         },
         {
           id: 2,
-          title: '' ,
-          img: '' ,
-          desc: '' ,
-          category: '',
-          price: ''
+          title: 'Куртка' ,
+          img: 'jacket.webp' ,
+          desc: 'Мужская куртка с винтажным принтом и надписью, прочная дышащая куртка для отдыха на открытом.' ,
+          category: 'jacket',
+          price: '2100'
         },
         {
           id: 3,
-          title: '' ,
-          img: 'https://ae04.alicdn.com/kf/Sfb69945bf41e439ca119c8ebc46667c0o.jpg_640x640.jpg' ,
-          desc: '' ,
-          category: '',
-          price: ''
+          title: 'Футболка' ,
+          img: 'tarchia.webp' ,
+          desc: 'Мужская облегающая футболка TARCHIA 2023, новые хлопковые топы с рисунком рок-фестиваля' ,
+          category: 't-shirt',
+          price: '1300'
         },
         {
           id: 4,
-          title: '' ,
-          img: 'https://ae04.alicdn.com/kf/H5d152acd5b3e47b6a14f8ae8c6e795b2M.jpg' ,
-          desc: '' ,
-          category: '',
-          price: ''
+          title: 'Бомбер' ,
+          img: 'taoligey.webp' ,
+          desc: 'Мужские куртки, осень-весна, ветровка, новинка 2023' ,
+          category: 'bomber',
+          price: '2500'
         },
         {
           id: 5,
-          title: '' ,
-          img: 'https://ae04.alicdn.com/kf/S6b10d157b2004b00b01962e3e5c8e6fej.jpg_640x640.jpg' ,
-          desc: '' ,
-          category: '',
-          price: ''
+          title: 'Пальто' ,
+          img: 'coat.webp' ,
+          desc: 'Новинка 2023, Брендовое повседневное шерстяное твидовое пальто MRMT, мужское' ,
+          category: 'coat',
+          price: '2800'
         },
         {
           id: 6,
-          title: '' ,
-          img: 'https://ae04.alicdn.com/kf/S1531d560a7a64f7b8cb69119fe232a09L.jpg' ,
-          desc: '' ,
-          category: '',
-          price: ''
+          title: 'Свитшот' ,
+          img: 'sweatshirt.webp' ,
+          desc: 'Свитшот мужской однотонный, худи в стиле Харадзюку, повседневная хлопковая кофта с капюшоном, уличная одежда, весна-осень' ,
+          category: 'sweatshirt',
+          price: '1100'
         },
         {
           id: 7,
-          title: '' ,
-          img: 'https://ae04.alicdn.com/kf/S1bc9fd808f4c491086592460618a26afh.jpg_640x640.jpg' ,
-          desc: '' ,
-          category: '',
-          price: ''
+          title: 'Костюм' ,
+          img: 'custems.webp',
+          desc: 'Мужской деловой костюм с длинным рукавом' ,
+          category: 'custems',
+          price: '2000'
+        },
+        {
+          id: 8,
+          title: 'Спортивная одежда' ,
+          img: 'hoodie.jpg',
+          desc: 'Мужской однотонный комплект из 2 предметов, толстовка с капюшоном и штаны для бега на осень и зиму 2023' ,
+          category: 'sports',
+          price: '2100'
+        },
+        {
+          id: 9,
+          title: 'Спортивная одежда' ,
+          img: 'id9.webp',
+          desc: 'Костюм спортивный мужской с капюшоном и брюками, лоскутный костюм с надписью Discovery Channel, теплая спортивная одежда, пуловер с капюшоном, Осень-зима' ,
+          category: 'sports',
+          price: '1500'
         }
       ],
 
@@ -84,7 +102,7 @@ class App extends React.Component {
         <Header orders={this.state.orders} onDelete={this.deleteOrder} />
         <Categories chooseCategory = {this.chooseCategory} />
         <Items onShowItem={this.onShowItem}  items={this.state.currentItems} onAdd={this.addToOrder}/>
-
+ 
         { this.state.showFullItem && <ShowFullItem item={this.state.fullItem} /> }
       </div>
     );
